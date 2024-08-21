@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* src/index.css أو ملف CSS مخصص */
+.scroll-hidden::-webkit-scrollbar {
+    height: 0px;
+    background: transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ----------/ file=> SpecialOffer/SpecialOffCard && file=> ProductMenuo/ProductSlider /---------- */
+.SpecialOffCard:hover .invisible {
+    visibility: visible !important;
+    transition: all .3s;
+}
+
+.SpecialOffCard:hover .add-cart {
+    background-color: rgb(250 204 21);
+}
+
+.SpecialOffCard:hover .price {
+    color: rgb(185 28 28);
+    /* transform: rotate(); */
+}
