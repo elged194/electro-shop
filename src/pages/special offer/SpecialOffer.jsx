@@ -5,10 +5,10 @@ import SpecialOffCard from "./SpecialOffCard";
 const SpecialOffer = () => {
   return (
     <>
-      <div className="grid grid-cols-[1fr_3fr] grid-flow-col  gap-2 my-5 h-auto">
+      <div className="flex  items-start justify-between max-lg:items-center  max-lg:flex-col  my-5 h-auto">
 
         {/* side special offer max-w-sm */}
-        <div className=" border-2 border-yellow-400 rounded-2xl p-5 flex items-center flex-col ">
+        <div className="w-4/12 max-lg:w-9/12 max-sm:w-full border-2 border-yellow-400 rounded-2xl p-5 flex items-center flex-col ">
           <div className="flex items-center justify-between w-full">
             <div className="text-xl font-semibold text-gray-500">
               <h1>Special</h1>
@@ -24,7 +24,7 @@ const SpecialOffer = () => {
 
           <div className="my-2 ">
             <img
-              src="https://via.placeholder.com/300x400?text=300*400"
+              src="https://via.placeholder.com/300x350?text=300*350"
               className="shadow-xl my-8"
               alt=""
             />
@@ -47,7 +47,9 @@ const SpecialOffer = () => {
           </div>
         </div>
 
-        <div className="">
+        {/* menuo product */}
+        <div className="w-8/12 max-lg:w-full">
+          {/* navBar */}
           <nav className="w-full m-auto ">
             <ul className="flex items-center justify-center ">
               <li className="mx-3 text-lg border-b-2 border-yellow-400 cursor-pointer font-bold">
@@ -62,7 +64,7 @@ const SpecialOffer = () => {
             </ul>
           </nav>
 
-          <div className="">
+          <div className="w-full flex flex-wrap justify-center my-5 p-2">
             <SpecialOffCard />
           </div>
         </div>

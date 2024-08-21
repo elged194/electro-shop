@@ -1,17 +1,27 @@
+import { useState } from "react";
 import Slider from "./slider";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      <div className="grid grid-rows-2 grid-flow-col gap-0  ">
+      <div className="w-full flex items-start justify-between max-lg:flex-col">
         {/* Side Bar */}
-        <div className="row-span-full shadow-2xl text-zinc-700">
-          <h3 className="bg-yellow-400 rounded-t-lg  py-3 px-5 w-full text-lg flex items-center text-neutral-800 font-medium">
+        <div className="w-1/5 shadow-2xl text-zinc-700 max-lg:w-full ">
+          <h3
+            onClick={() => setIsOpen(isOpen ? false : true)}
+            className="bg-yellow-400  rounded-t-lg max-lg:cursor-pointer py-3 px-5 w-full text-lg flex items-center text-neutral-800 font-medium"
+          >
             <i className="bx bx-menu-alt-right text-2xl px-2"></i>
             All Departments
           </h3>
 
-          <ul className="font-medium px-3">
+          <ul
+            className={`  font-medium px-3  ${
+              isOpen ? "block" : "hidden"
+            }  lg:block`}
+          >
             <li className="py-2 px-3 cursor-pointer hover:bg-yellow-400 border-b border-gray-400 font-bold ">
               Valuo of the day
             </li>
@@ -46,11 +56,10 @@ const Header = () => {
             <li className="py-2 px-3 cursor-pointer hover:bg-yellow-400 flex items-center justify-between ">
               TV & Audio <i className="bx bx-chevron-right text-xl"></i>
             </li>
-           
           </ul>
         </div>
 
-        <div className=" col-span-10 row-span-full rounded-t-lg bg-white ">
+        <div className="w-4/5 rounded-t-lg bg-white max-lg:w-full">
           {/* menuo */}
           <div className=" row-span-1 h-12 px-2 py-3 text-zinc-700">
             <a
@@ -87,7 +96,7 @@ const Header = () => {
           </div>
 
           {/* slider */}
-          <div className="h-auto  ">
+          <div className="h-auto max-lg:text-base ">
             <Slider />
           </div>
         </div>

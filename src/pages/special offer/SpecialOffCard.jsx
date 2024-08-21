@@ -39,10 +39,10 @@ const SpecialOffCard = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center my-5">
+    <>
       {product.map((item) => (
-        <div className="SpecialOffCard w-1/3 relative" key={item.id}>
-          <div className="bg-base-100 w-full mx-auto hover:border-2 p-4 rounded-lg cursor-pointer">
+        <div className="SpecialOffCard w-4/12 relative  max-lg:w-6/12 max-sm:w-full" key={item.id}>
+          <div className="bg-base-100 w-full mx-auto hover:border-2 p-4 rounded-lg cursor-pointer ">
             {/* titele */}
             <p className="text-gray-400">Speakers</p>
             <h2 className="mb-2 text-blue-700 font-medium">{item.name}</h2>
@@ -75,17 +75,17 @@ const SpecialOffCard = () => {
                 <i className="bx bx-heart"></i> Add to Wishlist
               </a>
             </div>
-          </div>
 
-          <div className="invisible w-full absolute inset-y-1/2 px-2 ">
-            <div className="flex items-center justify-between text-2xl text-gray-400">
-              <i className="bx cursor-pointer bx-chevron-left"></i>
-              <i className="bx cursor-pointer bx-chevron-right"></i>
+            <div className="invisible w-full absolute left-0 inset-y-2/4	 px-2 z-0">
+              <div className="flex items-center justify-between text-2xl text-gray-400">
+                <i className="bx cursor-pointer bx-chevron-left"></i>
+                <i className="bx cursor-pointer bx-chevron-right"></i>
+              </div>
             </div>
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

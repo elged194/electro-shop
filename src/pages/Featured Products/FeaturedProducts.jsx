@@ -3,9 +3,9 @@ import ProductFaveItem from "./productFaveItem";
 const FeaturedProducts = () => {
   return (
     <>
-      <section className="w-full flex items-center justify-between my-10">
+      <section className="w-full flex items-center justify-between max-lg:flex-col my-10">
         {/* Featured Products */}
-        <div className="w-2/6 py-1 px-2">
+        <div className="max-lg:w-full w-2/6 py-1 px-2 ">
           {/* title top*/}
           <div className="border-b border-gray-300">
             <h1 className="text-xl font-semibold text-gray-800 capitalize lg:text-xl">
@@ -24,7 +24,7 @@ const FeaturedProducts = () => {
         </div>
 
         {/* Onsale Products */}
-        <div className="w-2/6 py-1 px-2">
+        <div className="max-lg:w-full w-2/6 py-1 px-2 ">
           {/* title top*/}
           <div className="border-b border-gray-300">
             <h1 className="text-xl font-semibold text-gray-800 capitalize lg:text-xl">
@@ -44,7 +44,7 @@ const FeaturedProducts = () => {
         </div>
 
         {/* Top Rated Products */}
-        <div className="w-2/6 py-1 px-2">
+        <div className="max-lg:w-full w-2/6 py-1 px-2 ">
           {/* title top*/}
           <div className="border-b border-gray-300">
             <h1 className="text-xl font-semibold text-gray-800 capitalize lg:text-xl">

@@ -17,8 +17,8 @@ const ProductLeft = () => {
   return (
     <>
       {products.map((item) => (
-        <div className="SpecialOffCard relative w-full" key={item.id}>
-          <div className="bg-base-100 w-full mx-auto hover:border-2 p-4 rounded-lg cursor-pointer">
+        <div className="SpecialOffCard relative  max-sm:w-full max-lg:w-6/12 w-full " key={item.id}>
+          <div className="bg-base-100  mx-auto hover:border-2 p-4 rounded-lg cursor-pointer">
             {/* title */}
             <p className="text-gray-400">Speakers</p>
             <h2 className="mb-2 text-blue-700 font-medium">{item.name}</h2>

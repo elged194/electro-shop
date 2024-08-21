@@ -18,20 +18,20 @@ const Slider = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className="absolute inset-0 flex justify-center items-center bg-indigo-50"
+          className="absolute inset-0 flex justify-center items-center bg-indigo-50 "
           style={{
             display: currentSlide === index ? "block" : "none",
             height: "100%", // Ensure each slide takes full height
           }}
         >
           {/* Placeholder for image */}
-          <div className="absolute top-1/2 left-8 transform -translate-y-1/2 text-5xl text-zinc-700 font-sans bg-transparent z-10">
+          <div className="absolute top-1/2 left-8 transform -translate-y-1/2 text-5xl max-lg:text-2xl text-zinc-700 font-sans bg-transparent z-10">
             <h1 className="mb-2">THE NEW</h1>
-            <h1 className="text-5xl">STANDARD</h1>
+            <h1 className="text-5xl max-lg:text-3xl">STANDARD</h1>
             <p className="text-sm font-bold mt-2">
               UNDER FAVORABLE SMARTWATCHES
             </p>
-            <h1 className="text-4xl font-bold text-zinc-900 mt-3">
+            <h1 className="text-4xl base font-bold text-zinc-900 mt-3">
               <sup>$</sup>794<sup>99</sup>
             </h1>
             <button className="bg-yellow-400 text-sm px-8 py-1.5 rounded-lg font-medium hover:bg-yellow-300 transition">
@@ -52,7 +52,7 @@ const Slider = () => {
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`w-4 h-4 rounded-full ${
+            className={`w-4 h-4 max-lg:w-2 rounded-full ${
               currentSlide === index ? "bg-yellow-400 py-4" : "bg-indigo-300"
             }`}
             onClick={() => setCurrentSlide(index)}

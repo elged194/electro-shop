@@ -7,11 +7,11 @@ const ProductCard = () => {
   ];
 
   return (
-    <div className="py-6 my-8  flex items-center justify-between">
+    <div className="py-6 my-8  flex items-center justify-between max-lg:flex-col">
       {productCart.map((product) => (
         <div
           key={product.id}
-          className="flex max-w-md w-1/3 overflow-hidden bg-slate-100 rounded-lg shadow-lg  mb-4 mx-3 "
+          className="flex w-1/3 max-lg:w-full  overflow-hidden bg-slate-100 rounded-lg shadow-lg  mb-4 mx-3 "
         >
           <div
             className="w-1/2 bg-cover"

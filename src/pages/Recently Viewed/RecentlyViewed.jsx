@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TestimonialRecentlyViewed from "./Testimonial";
 
 const RecentlyViewed = () => {
@@ -24,8 +24,29 @@ const RecentlyViewed = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerSlide, setItemsPerSlide] = useState(6);
 
-  const itemsPerSlide = 6;
+  useEffect(() => {
+    const updateItemsPerSlide = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth >= 1024) {
+        setItemsPerSlide(6); // الشاشات الكبيرة
+      } else if (screenWidth >= 768) {
+        setItemsPerSlide(3); // الشاشات المتوسطة
+      } else {
+        setItemsPerSlide(1); // الشاشات الصغيرة جدًا والصغيرة
+      }
+    };
+
+    // Set initial value
+    updateItemsPerSlide();
+
+    // Update on resize
+    window.addEventListener("resize", updateItemsPerSlide);
+
+    // Clean up event listener
+    return () => window.removeEventListener("resize", updateItemsPerSlide);
+  }, []);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>

@@ -16,7 +16,7 @@ const TestimonialRecentlyViewed = ({
           )
           .map((item) => (
             <div
-              className="SpecialOffCard w-1/6 p-2 hover:border-2 border-gray-300 hover:p-1.5 cursor-pointer"
+              className="SpecialOffCard w-auto p-2 hover:border-2 border-gray-300 hover:p-1.5 cursor-pointer"
               key={item.id}
             >
               {/* title */}

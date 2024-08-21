@@ -8,6 +8,7 @@ const Navbar = () => {
       <nav className="relative bg-white  ">
         <div className="">
           {/* top bar */}
+
           <div className="py-1.5 flex justify-between items-center max-md:flex-nowrap max-lg:flex-col bg-white border-b shadow ">
             <div className=" flex items-center">
               {/* phone */}
@@ -22,7 +23,8 @@ const Navbar = () => {
               </a>
             </div>
 
-            <div className="flex items-center">
+            {/* top lift */}
+            <div className="flex items-center max-lg:flex-wrap 	">
               {/* Location */}
               <a
                 href="#"
@@ -80,7 +82,7 @@ const Navbar = () => {
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   type="button"
-                  className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                  className="text-gray-500  hover:text-gray-600  focus:outline-none focus:text-gray-600 "
                   aria-label="toggle menu"
                 >
                   {!isOpen ? (
@@ -142,7 +144,7 @@ const Navbar = () => {
             <div
               className={`absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-24 ${
                 isOpen
-                  ? "translate-x-0 opacity-100"
+                  ? "translate-x-0 opacity-100 mt-9"
                   : "opacity-0 -translate-x-full"
               } md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center`}
             >
