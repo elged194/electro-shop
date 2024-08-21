@@ -60,8 +60,9 @@ const Header = () => {
         </div>
 
         <div className="w-4/5 rounded-t-lg bg-white max-lg:w-full">
+
           {/* menuo */}
-          <div className=" row-span-1 h-12 px-2 py-3 text-zinc-700">
+          <div className=" row-span-1 h-12 px-2 py-3 text-zinc-700 max-lg:my-2 flex max-lg:justify-center max-lg:flex-wrap">
             <a
               className="mx-4 text-sm font-bold transition-colors text-red-700 "
               href="#"
