@@ -24,11 +24,11 @@ const Branding = () => {
   }, []);
 
   const images = [
-    "https://via.placeholder.com/150x50?text=150x50",
-    "https://via.placeholder.com/150x50?text=150x50",
-    "https://via.placeholder.com/150x50?text=150x50",
-    "https://via.placeholder.com/150x50?text=150x50",
-    "https://via.placeholder.com/150x50?text=150x50",
+    "./img/brnd1.png",
+    "./img/brnd2.png",
+    "./img/brnd3.png",
+    "./img/brnd4.png",
+    "./img/brnd5.png",
   ];
 
   return (

@@ -1,14 +1,14 @@
 // import "./App.css";
 import Footer from "./components/Footer/footer";
-import Header from "./components/header/header";
-import Navbar from "./components/Navbar/nav";
+import Header from "./components/Header/header";
+import Navbar from "./components/NavBar/nav";
 import Bestsellers from "./pages/Bestsellers/Bestsellers";
 import Branding from "./pages/Branding/Branding";
-import FeaturedProducts from "./pages/Featured Products/FeaturedProducts";
-import ProductMenu from "./pages/Product menuo/ProductMenu";
-import PrductCard from "./pages/productCard/prductCard";
-import RecentlyViewed from "./pages/Recently Viewed/RecentlyViewed";
-import SpecialOffer from "./pages/special offer/SpecialOffer";
+import FeaturedProducts from "./pages/FeaturedProducts/FeaturedProducts";
+import PrductCard from "./pages/ProductCard/prductCard";
+import ProductMenu from "./pages/ProductMenu/ProductMenu";
+import RecentlyView from "./pages/RecentlyView/RecentlyViewed";
+import SpecialOffer from "./pages/SpecialOffer/SpecialOffer";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <SpecialOffer />
         <ProductMenu />
         <Bestsellers />
-        <RecentlyViewed />
+        <RecentlyView />
         <Branding />
         <FeaturedProducts />
       </main>

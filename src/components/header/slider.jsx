@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = ["Slide 1", "Slide 2", "Slide 3", "Slide 4", "Slide 5"];
+  const slides = [`./Screenshot 2024-08-30 203515.png`, `./smartwatch-front-side.png`, `10706484.png`, `./pexels-cottonbro-3945662.jpg`, "Slide 5"];
 
   // Update slide position every 2 seconds
   useEffect(() => {
@@ -40,10 +40,10 @@ const Slider = () => {
           </div>
 
           <img
-            src={`https://via.placeholder.com/800x600?text=${slide}`}
+            src={slide}
             alt={slide}
-            className="absolute inset-0 w-full h-full object-cover "
-            style={{ opacity: 0.5 }} // Adjust opacity to make it less visible if needed
+            className="absolute right-32 h-full"
+            style={{ opacity: 1 }} // Adjust opacity to make it less visible if needed
           />
         </div>
       ))}

@@ -59,14 +59,9 @@ const Bestsellers = () => {
 
         {/* -------/ baner /------ */}
         <div className="w-full relative overflow-hidden mt-5">
-          <div className="w-full m-auto">
-            <img
-              src="https://via.placeholder.com/1300x200?text=1300x170"
-              alt="Banner"
-            />
-          </div>
+          
 
-          <div className="absolute left-14 max-lg:left-0 inset-y-1/2 flex items-center">
+          <div className="absolute right-0 max-lg:left-0 inset-y-1/2 flex items-center">
             <div className="px-5 border-r border-gray-600 text-4xl max-lg:text-xl font-light leading-none">
               <h1 className="tracking-tighter">
                 SHOP AND <span className="font-semibold">SAVE BIG</span>
@@ -80,6 +75,14 @@ const Bestsellers = () => {
             >
               <sup>$</sup>79<sup>99</sup>
             </a>
+          </div>
+
+          <div className="">
+            <img
+            className=""
+              src="./img/bnar.png"
+              alt="Banner"
+            />
           </div>
         </div>
       </section>

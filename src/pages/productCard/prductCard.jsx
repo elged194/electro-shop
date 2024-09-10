@@ -1,8 +1,8 @@
 const ProductCard = () => {
   const productCart = [
-    { id: 1, name: "Product 1", offer: "Shop now" },
-    { id: 2, name: "Product 2", offer: "UP 70%" },
-    { id: 3, name: "Product 3", offer: "Shop now" },
+    { id: 1, name: "Product 1", offer: "Shop now", img: `./Screenshot 2024-08-30 211812.png` },
+    { id: 2, name: "Product 2", offer: "UP 70%", img: `./Screenshot 2024-08-30 212337.png` },
+    { id: 3, name: "Product 3", offer: "Shop now", img: `./Screenshot 2024-08-30 212427.png` },
     // يمكنك إضافة المزيد من المنتجات هنا
   ];
 
@@ -13,12 +13,13 @@ const ProductCard = () => {
           key={product.id}
           className="flex w-1/3 max-lg:w-full  overflow-hidden bg-slate-100 rounded-lg shadow-lg  mb-4 mx-3 "
         >
+          <img src={product.img} alt="" />
           <div
-            className="w-1/2 bg-cover"
-            style={{
-              backgroundImage:
-                'url("https://via.placeholder.com/200x150?text=200x150")',
-            }}
+            // className="w-1/2 bg-cover"
+            // style={{
+            //   backgroundImage:
+            //     'url("https://via.placeholder.com/200x150?text=200x150")',
+            // }}
           />
           <div className="w-1/2 p-4 md:p-4">
             <h1 className="text-xl font-bold text-gray-800 ">{product.name}</h1>

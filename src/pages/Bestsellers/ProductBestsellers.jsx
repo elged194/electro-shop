@@ -1,11 +1,11 @@
 const ProductBestsellers = () => {
   const product = [
-    { id: 1, name: "Tablets Air 3Wifi 64GB Gold 1", price: 100.89 },
-    { id: 2, name: "Tablets Air 3Wifi 64GB Gold 2", price: 200.89 },
-    { id: 3, name: "Tablets Air 3Wifi 64GB Gold 3", price: 300.89 },
-    { id: 4, name: "Tablets Air 3Wifi 64GB Gold 4", price: 400.89 },
-    { id: 5, name: "Tablets Air 3Wifi 64GB Gold 5", price: 500.89 },
-    { id: 6, name: "Tablets Air 3Wifi 64GB Gold 6", price: 600.89 },
+    { id: 1, name: "Tablets Air 3Wifi 64GB Gold 1", price: 100.89, img:`./img/bes1.png` },
+    { id: 2, name: "Tablets Air 3Wifi 64GB Gold 2", price: 200.89, img:`./img/bes2.png` },
+    { id: 3, name: "Tablets Air 3Wifi 64GB Gold 3", price: 300.89, img:`./img/bes3.png` },
+    { id: 4, name: "Tablets Air 3Wifi 64GB Gold 4", price: 400.89, img:`./img/bes4.png` },
+    { id: 5, name: "Tablets Air 3Wifi 64GB Gold 5", price: 500.89, img:`./img/bes5.png` },
+    { id: 6, name: "Tablets Air 3Wifi 64GB Gold 6", price: 600.89, img:`./img/bes6.png` },
   ];
 
   return (
@@ -19,7 +19,7 @@ const ProductBestsellers = () => {
           {/* images */}
           <div className="w-2/5 bg-white m-auto">
             <img
-              src="https://via.placeholder.com/150x100?text=150x100"
+              src={item.img}
               className="mb-2 m-auto"
               alt=""
             />

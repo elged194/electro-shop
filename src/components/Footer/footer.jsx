@@ -50,22 +50,22 @@ const Footer = () => {
 
         <div className=" w-4/12 flex justify-end items-center">
           <img
-            src="https://via.placeholder.com/30x30?text=35x30"
+            src="./img/pay1.png"
             className="mx-2"
             alt=""
           />
           <img
-            src="https://via.placeholder.com/30x30?text=35x30"
+            src="./img/pay2.png"
             className="mx-2"
             alt=""
           />
           <img
-            src="https://via.placeholder.com/30x30?text=35x30"
+            src="./img/pay3.png"
             className="mx-2"
             alt=""
           />
           <img
-            src="https://via.placeholder.com/30x30?text=35x30"
+            src="./img/pay4.png"
             className="mx-2"
             alt=""
           />
